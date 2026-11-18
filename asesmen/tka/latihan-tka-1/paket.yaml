@@ -1,0 +1,59 @@
+# Latihan bergaya TKA SD (soal karangan sendiri; format mengikuti contoh Pusmendik).
+judul: "Latihan TKA Matematika 1"
+jenis: tka
+kelas: 6
+fase: "C"
+topik: "Campuran"
+tp: []
+waktu: "60 menit"
+petunjuk: "Berdoalah sebelum mengerjakan.\nBacalah setiap soal dengan teliti.\nPerhatikan bentuk soal: satu jawaban, beberapa jawaban, atau tabel Benar/Salah."
+
+soal:
+  - tipe: pg
+    soal: "$\\frac{3}{4} + 0,5 - 25\\% = ....$"
+    pilihan: ["$\\frac{1}{2}$", "$1$", "$1\\frac{1}{4}$", "$1\\frac{1}{2}$"]
+    jawaban: 1
+    pembahasan: "$\\frac{3}{4} = 0,75$ dan $25\\% = 0,25$. Jadi $0,75 + 0,5 - 0,25 = 1$."
+    level: Pemahaman
+    topik: Bilangan
+
+  - tipe: pg
+    soal: "Toko menjual 3 kg apel seharga Rp54.000,00. Ibu membeli 2,5 kg apel dan membayar dengan uang Rp50.000,00. Kembalian yang diterima Ibu adalah ...."
+    pilihan: ["Rp3.000,00", "Rp5.000,00", "Rp9.000,00", "Rp10.000,00"]
+    jawaban: 1
+    pembahasan: "Harga 1 kg = Rp18.000,00. Harga 2,5 kg = Rp45.000,00. Kembalian = Rp50.000,00 − Rp45.000,00 = Rp5.000,00."
+    level: Penerapan
+    topik: Bilangan (uang)
+
+  - tipe: bs
+    soal: "Sebuah kolam berbentuk balok berukuran panjang 10 m, lebar 5 m, dan dalam 2 m. Tentukan **Benar** atau **Salah** untuk setiap pernyataan tentang kolam tersebut."
+    pernyataan: ["Volume kolam adalah $100\\ \\text{m}^3$.", "Luas alas kolam adalah $15\\ \\text{m}^2$.", "Kolam penuh dapat menampung 100.000 liter air."]
+    jawaban: [true, false, true]
+    pembahasan: "Volume = 10 × 5 × 2 = 100 m³. Luas alas = 10 × 5 = 50 m². 1 m³ = 1.000 liter, jadi 100 m³ = 100.000 liter."
+    level: Penerapan
+    topik: Pengukuran
+
+  - tipe: pgk
+    soal: "Pilih semua pernyataan yang benar tentang bilangan 48."
+    pilihan: ["48 adalah kelipatan 6.", "48 adalah faktor dari 12.", "FPB dari 48 dan 36 adalah 12.", "48 adalah bilangan prima."]
+    jawaban: [0, 2]
+    pembahasan: "48 = 6 × 8. Faktor dari 12 paling besar 12. FPB(48, 36) = 12. 48 punya banyak faktor sehingga bukan prima."
+    level: Penalaran
+    topik: Bilangan (faktor dan kelipatan)
+
+  - tipe: isian
+    soal: "Perhatikan diagram batang berikut. Selisih penjualan terbanyak dan paling sedikit adalah ... buah."
+    gambar: diagram-penjualan.svg
+    jawaban: 12
+    satuan: "buah"
+    pembahasan: "Terbanyak 24 (Jumat), paling sedikit 12 (Senin). Selisih = 24 − 12 = 12."
+    level: Penerapan
+    topik: Analisis data
+
+  - tipe: isian
+    soal: "Jarak Kota A ke Kota B pada peta adalah 6 cm. Skala peta 1 : 500.000. Jarak sebenarnya adalah ... km."
+    jawaban: 30
+    satuan: "km"
+    pembahasan: "6 × 500.000 = 3.000.000 cm = 30.000 m = 30 km."
+    level: Penerapan
+    topik: Rasio dan skala

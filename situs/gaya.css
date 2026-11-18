@@ -1,0 +1,20 @@
+:root { --biru: #0072B2; --oranye: #E69F00; --hijau: #009E73; --tinta: #1f2937; --kertas: #fffdf7; --garis: #e5e7eb; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Andika, system-ui, sans-serif; color: var(--tinta); background: var(--kertas); font-size: 18px; line-height: 1.5; }
+header { background: linear-gradient(135deg, #e0f2fe, #fff7e6); padding: 2.5rem 16px 1.5rem; text-align: center; }
+header h1 { margin: 0; color: var(--biru); font-size: 2.4rem; }
+header p { margin: .3rem auto 1rem; max-width: 36rem; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
+nav a { background: var(--biru); color: #fff; text-decoration: none; padding: .3rem 1rem; border-radius: 999px; font-weight: 700; }
+main { max-width: 960px; margin: 0 auto; padding: 1rem 16px 3rem; }
+h2 { border-bottom: 3px solid var(--oranye); padding-bottom: .2rem; }
+h2 small { font-size: .9rem; color: #6b7280; font-weight: 400; }
+.daftar { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.bab { background: #fff; border: 2px solid var(--garis); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+.bab-utama { display: flex; flex-direction: column; padding: 1rem; text-decoration: none; color: inherit; flex: 1; }
+.bab-utama:hover { background: #f0f9ff; }
+.bab-no { font-size: .85rem; font-weight: 700; color: var(--oranye); text-transform: uppercase; }
+.bab-judul { font-size: 1.25rem; font-weight: 700; color: var(--biru); }
+.bab-elemen { font-size: .9rem; color: #6b7280; }
+.bab-unduh { display: flex; flex-wrap: wrap; gap: .4rem; padding: .6rem 1rem; border-top: 1px solid var(--garis); background: #fafafa; }
+.bab-unduh a { font-size: .85rem; color: var(--hijau); font-weight: 700; text-decoration: none; border: 2px solid currentColor; border-radius: 999px; padding: 0 .6rem; }

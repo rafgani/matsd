@@ -1,0 +1,30 @@
+# Peta materi: sumber kebenaran untuk daftar bab, TP, dan halaman situs.
+# Ditambah otomatis oleh `npm run new`. Edit judul/TP/status secara manual.
+# status: rencana | draf | siap
+kelas:
+  "1":
+    fase: A
+    bab:
+      - nomor: 1
+        slug: bab-01-bilangan-sampai-20
+        judul: Bilangan sampai 20
+        elemen: Bilangan
+        tp:
+          - 1.BIL.1
+          - 1.BIL.2
+        status: draf
+  "2":
+    fase: A
+    bab: []
+  "3":
+    fase: B
+    bab: []
+  "4":
+    fase: B
+    bab: []
+  "5":
+    fase: C
+    bab: []
+  "6":
+    fase: C
+    bab: []

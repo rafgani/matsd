@@ -1,0 +1,17 @@
+{
+  "name": "slidev-addon-matsd",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Komponen bersama MatSD: papan JSXGraph, alat peraga matematika, dan widget kuis.",
+  "keywords": [
+    "slidev-addon",
+    "slidev"
+  ],
+  "engines": {
+    "slidev": ">=0.50.0"
+  },
+  "dependencies": {
+    "jsxgraph": "^1.14.3",
+    "katex": "^0.19.1"
+  }
+}

@@ -1,0 +1,51 @@
+# Soal karangan sendiri untuk latihan pengayaan.
+judul: "Latihan Olimpiade 1"
+jenis: kompetisi
+kelas: "4-6"
+topik: "Aritmetika dan logika"
+waktu: "60 menit"
+petunjuk: "Kerjakan dari soal yang kamu anggap paling mudah.\nTulis langkah pengerjaanmu di kertas coretan."
+
+soal:
+  - tipe: isian
+    soal: "Berapa banyak bilangan di antara 10 dan 100 yang habis dibagi 9?"
+    jawaban: 10
+    pembahasan: "Kelipatan 9 di antara 10 dan 100: 18, 27, ..., 99. Banyaknya $(99-18) \\div 9 + 1 = 10$."
+    level: Mudah
+    topik: Kelipatan
+    sumber: "Karangan sendiri"
+
+  - tipe: isian
+    soal: "Jumlah umur Ani, Budi, dan Citra adalah 38 tahun. Budi 2 tahun lebih tua dari Ani, dan Citra 4 tahun lebih tua dari Budi. Umur Citra adalah ... tahun."
+    jawaban: 16
+    satuan: "tahun"
+    pembahasan: "Misal umur Ani $x$. Budi $x+2$, Citra $x+6$. Jumlah $3x + 8 = 38$, jadi $x = 10$ dan Citra $= 16$."
+    level: Sedang
+    topik: Aljabar sederhana
+    sumber: "Karangan sendiri"
+
+  - tipe: isian
+    soal: "Keliling sebuah persegi panjang adalah 42 cm. Panjangnya 3 cm lebih dari lebarnya. Luas persegi panjang tersebut adalah ... $\\text{cm}^2$."
+    jawaban: 108
+    satuan: "cm²"
+    pembahasan: "$p + l = 21$ dan $p = l + 3$, sehingga $l = 9$, $p = 12$. Luas $= 12 \\times 9 = 108$."
+    level: Sedang
+    topik: Geometri
+    sumber: "Karangan sendiri"
+
+  - tipe: isian
+    soal: "Perhatikan pola bilangan: 2, 5, 10, 17, 26, .... Suku ke-8 dari pola tersebut adalah ...."
+    jawaban: 65
+    pembahasan: "Suku ke-$n$ adalah $n^2 + 1$ ($1^2+1=2$, $2^2+1=5$, ...). Suku ke-8: $64 + 1 = 65$."
+    level: Sulit
+    topik: Pola bilangan
+    sumber: "Karangan sendiri"
+
+  - tipe: uraian
+    soal: "Ada 5 orang bertemu. Setiap dua orang bersalaman tepat satu kali. Berapa kali salaman terjadi? Jelaskan caramu."
+    jawaban: "10 kali"
+    pembahasan: "Setiap orang bersalaman dengan 4 orang lain: $5 \\times 4 = 20$. Tiap salaman terhitung dua kali, jadi $20 \\div 2 = 10$."
+    level: Sulit
+    topik: Kombinatorika dasar
+    sumber: "Karangan sendiri"
+    baris: 5

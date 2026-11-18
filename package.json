@@ -1,0 +1,29 @@
+{
+  "name": "matsd",
+  "private": true,
+  "type": "module",
+  "description": "Workspace materi Matematika SD (Kurikulum Merdeka): presentasi, bacaan, latihan, kuis, asesmen.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "new": "node scripts/new-bab.mjs",
+    "build": "node scripts/build-all.mjs",
+    "build:web": "node scripts/build-all.mjs --no-pdf",
+    "pdf": "node scripts/build-all.mjs --only-pdf",
+    "check": "node scripts/check.mjs",
+    "serve": "npx --yes serve dist -l 4173",
+    "paket": "node scripts/new-paket.mjs",
+    "gen": "node scripts/paket.mjs"
+  },
+  "dependencies": {
+    "@slidev/cli": "^53.1.0",
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-addon-matsd": "*",
+    "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.65.1"
+  }
+}

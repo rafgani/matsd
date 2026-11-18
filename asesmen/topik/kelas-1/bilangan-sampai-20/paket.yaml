@@ -1,0 +1,51 @@
+judul: "Asesmen Bilangan sampai 20"
+jenis: topik
+kelas: 1
+fase: "A"
+topik: "Bilangan sampai 20"
+tp: [1.BIL.1, 1.BIL.2]
+waktu: "30 menit"
+petunjuk: "Berdoalah sebelum mengerjakan.\nBacalah soal dengan teliti.\nPilih atau tulis jawaban yang benar."
+
+soal:
+  - tipe: pg
+    soal: "Bilangan yang paling besar adalah ...."
+    pilihan: ["14", "19", "11", "16"]
+    jawaban: 1
+    pembahasan: "19 berada paling kanan di garis bilangan."
+    level: Pemahaman
+    topik: Membandingkan bilangan
+    tp: 1.BIL.2
+
+  - tipe: isian
+    soal: "1 puluhan dan 7 satuan adalah bilangan ...."
+    jawaban: 17
+    pembahasan: "10 + 7 = 17."
+    level: Pemahaman
+    topik: Nilai tempat
+    tp: 1.BIL.1
+
+  - tipe: bs
+    soal: "Tentukan **Benar** atau **Salah** untuk setiap pernyataan."
+    pernyataan: ["12 kurang dari 15", "18 lebih kecil dari 13", "Bilangan sebelum 20 adalah 19"]
+    jawaban: [true, false, true]
+    pembahasan: "18 lebih besar dari 13, jadi pernyataan B salah."
+    level: Pemahaman
+    topik: Membandingkan bilangan
+    tp: 1.BIL.2
+
+  - tipe: pgk
+    soal: "Pilih semua bilangan yang lebih besar dari 15."
+    pilihan: ["12", "16", "19", "15"]
+    jawaban: [1, 2]
+    pembahasan: "16 dan 19 ada di sebelah kanan 15 pada garis bilangan."
+    level: Penerapan
+    topik: Membandingkan bilangan
+    tp: 1.BIL.2
+
+  - tipe: jodoh
+    soal: "Jodohkan lambang bilangan dengan cara membacanya."
+    pasangan: [["12", "dua belas"], ["15", "lima belas"], ["18", "delapan belas"]]
+    level: Pengetahuan
+    topik: Membaca bilangan
+    tp: 1.BIL.1

@@ -1,0 +1,67 @@
+# Paket soal — satu sumber untuk 3 keluaran:
+#   slides.md  → latihan interaktif di browser (dinilai otomatis)
+#   soal.typ   → lembar soal cetak (PDF)
+#   kunci.typ  → kunci jawaban + pembahasan + kisi-kisi (PDF, untuk guru)
+# Bangun ulang: `npm run gen`. File hasil jangan diedit tangan (tidak masuk git).
+#
+# Teks soal: $\frac{1}{2}$ = rumus (LaTeX), **tebal**, baris baru = baris baru. Koma desimal ditulis biasa: 0,75.
+# Gambar: taruh di folder public/ di samping file ini, tulis namanya di `gambar:` (SVG/PNG).
+#
+# Bentuk soal (`tipe`):
+#   pg      pilihan ganda        pilihan: [...]  jawaban: <indeks mulai 0>
+#   pgk     PG kompleks (>1 benar)  pilihan: [...]  jawaban: [indeks, indeks]
+#   bs      tabel Benar/Salah    pernyataan: [...]  jawaban: [true, false, ...]
+#   isian   isian singkat        jawaban: 12  (atau daftar jawaban diterima)  satuan: "cm"
+#   jodoh   menjodohkan          pasangan: [[kiri, kanan], ...]
+#   uraian  uraian (tidak dinilai otomatis)  jawaban: "kunci singkat"  baris: 4
+# Opsional di tiap soal: pembahasan, level, topik, tp, sumber, skor, gambar.
+
+judul: "{{JUDUL}}"
+jenis: {{JENIS}}          # topik | tka | kompetisi (harus sesuai folder)
+kelas: {{KELAS}}
+fase: "{{FASE}}"
+topik: {{TOPIK}}
+tp: {{TP}}                # kode TP dari kurikulum/atp/kelas-N.md (untuk jenis topik)
+waktu: {{WAKTU}}
+petunjuk: "Berdoalah sebelum mengerjakan. Bacalah setiap soal dengan teliti."
+
+soal:
+  - tipe: pg
+    soal: "Hasil dari $\\frac{1}{2} + \\frac{1}{4}$ adalah ...."
+    pilihan: ["$\\frac{1}{6}$", "$\\frac{2}{6}$", "$\\frac{3}{4}$", "$\\frac{2}{4}$"]
+    jawaban: 2
+    pembahasan: "$\\frac{1}{2} = \\frac{2}{4}$, jadi $\\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}$."
+    level: Pemahaman
+    topik: Pecahan
+
+  - tipe: pgk
+    soal: "Pilih semua bilangan yang habis dibagi 5."
+    pilihan: ["15", "22", "30", "47"]
+    jawaban: [0, 2]
+    pembahasan: "Bilangan yang habis dibagi 5 berakhir 0 atau 5."
+    level: Pemahaman
+
+  - tipe: bs
+    soal: "Tentukan **Benar** atau **Salah** untuk setiap pernyataan."
+    pernyataan: ["$3 \\times 4 = 12$", "$20 \\div 4 = 6$"]
+    jawaban: [true, false]
+    pembahasan: "$20 \\div 4 = 5$."
+    level: Penerapan
+
+  - tipe: isian
+    soal: "Sebuah pita panjangnya 2,5 m. Panjang pita dalam cm adalah ...."
+    jawaban: 250
+    satuan: "cm"
+    pembahasan: "$2,5 \\times 100 = 250$."
+    level: Penerapan
+
+  - tipe: jodoh
+    soal: "Jodohkan operasi dengan hasilnya."
+    pasangan: [["$6 + 5$", "11"], ["$6 \\times 5$", "30"], ["$6 - 5$", "1"]]
+
+  - tipe: uraian
+    soal: "Jelaskan cara menentukan keliling persegi yang sisinya 7 cm."
+    jawaban: "$4 \\times 7 = 28$ cm"
+    pembahasan: "Keliling persegi = 4 × panjang sisi."
+    level: Penalaran
+    baris: 3

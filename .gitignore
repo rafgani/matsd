@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.slidev/
+*.local
+.DS_Store
+konten/**/*.pdf
+
+# Bahan referensi (berhak cipta pihak lain) — jangan di-commit/diterbitkan
+referensi/
+
+# Hasil generator paket soal (dibuat dari paket.yaml)
+asesmen/**/slides.md
+asesmen/**/soal.typ
+asesmen/**/kunci.typ
+kompetisi/**/slides.md
+kompetisi/**/soal.typ
+kompetisi/**/kunci.typ

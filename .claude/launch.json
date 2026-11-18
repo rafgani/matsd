@@ -1,0 +1,43 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "slides",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "slidev",
+        "konten/kelas-1/bab-01-bilangan-sampai-20/slides.md",
+        "--open",
+        "false",
+        "--port",
+        "3030"
+      ],
+      "port": 3030
+    },
+    {
+      "name": "galeri",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "slidev",
+        "konten/_galeri/slides.md",
+        "--open",
+        "false",
+        "--port",
+        "3031"
+      ],
+      "port": 3031
+    },
+    {
+      "name": "situs",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--yes",
+        "serve",
+        "dist",
+        "-l",
+        "4173"
+      ],
+      "port": 4173
+    }
+  ]
+}
